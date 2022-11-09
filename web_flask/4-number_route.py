@@ -2,6 +2,7 @@
 """Web frameworke task 0"""
 
 from flask import Flask
+from flask import abort
 
 app = Flask(__name__)
 
@@ -9,7 +10,10 @@ app = Flask(__name__)
 @app.route("/number/<n>", strict_slashes=False)
 def number(n):
     """Says HBNB"""
-    return "{} is a number".format(n)
+    if type(n) == int:
+        return "{} is a number".format(n)
+    else:
+        abort()
 
 
 if __name__ == '__main__':
