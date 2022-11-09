@@ -7,10 +7,8 @@ app = Flask(__name__)
 
 
 @app.route("/python/<text>", strict_slashes=False)
-def python(text):
+def python(text="is cool"):
     """Says c is dash"""
-    if text == None:
-        text = "is cool"
     text = text.replace("_", " ")
     return "Python {}".format(text)
 
