@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""Web frameworke task 0"""
+
 from flask import Flask
 
 app = Flask(__name__)
