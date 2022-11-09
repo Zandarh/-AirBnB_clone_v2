@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route("/number_odd_or_even/<n>", strict_slashes=False)
 def hello(n):
     """Says HBNB"""
-    return render_template("6-number_odd_or_even", n=n)
+    return render_template("6-number_odd_or_even.html", n=n)
 
 
 if __name__ == '__main__':
