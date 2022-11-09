@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """Web frameworke task 0"""
 
-from flask import Flask
-from flask import render_template
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
